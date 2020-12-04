@@ -1,102 +1,447 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+@import url("reset.css");
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+h1 {
+    display:none;
 }
 
-body {
-    line-height:1;
+.nav-menu-list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    background-color: #3F969D;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+.nav-menu-list-item{
+    margin:56px 56px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
-nav ul {
-    list-style:none;
+.nav-menu-list-item a{
+  color: #ffffff;
 }
 
-blockquote, q {
-    quotes:none;
+.nav-menu-list-item img{
+    width: 120px;
+    position: absolute;
+    top:12px;
+    right: 734px;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+.site-concept{
+  text-align: center;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+.site-concept img{
+  width: 80%;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+
+.button {
+    display      : inline-block;
+    cursor       : pointer;
+    transition   : .3s; 
+  }
+  .button:hover {
+    transform    : scale(1.1,1.1);
+  }
+  .btn{
+    text-align: center;
+  }
+
+  .about-us-summary{
+    position: relative;
+    background-color: #5BCAD3;
+    margin: 100px;
+    height: 440px;
+  }
+
+.about-us-summary-img img{
+  object-fit: cover;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+.about-us-summary-intro{
+  position:absolute;
+  right: 220px;
+  top:36px;
+}
+  
+.about-us-summary-text{
+  position: absolute;
+  right: 200px;
+  top:180px;
+  width: 280px;
+  line-height:40px;
+  font-family: "M PLUS 1p";
+  color: #fff;
+  font-weight: bold;
 }
 
-del {
-    text-decoration: line-through;
+.btn-about{
+  position: absolute;
+  right: 200px;
+  top:332px;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+.campaign-section{
+  position: relative;
+  background-color: #EC2E2E;
+  margin: 100px;
+  height: 880px;
 }
 
-table {
-    border-collapse:collapse;
-    border-spacing:0;
+#campaign{
+  padding: 50px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 100px;
+  letter-spacing:10px;
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+.wrap{
+  display: flex;
 }
 
-input, select {
-    vertical-align:middle;
+.campaign-section-content-img img{
+  height: 319px;
+  margin: 0;
+}
+
+.campaign-section-content-title{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size:50px;
+}
+
+.campaign-section-content-description{
+  text-align: center;
+  line-height:40px;
+  font-family: "M PLUS 1p"; 
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  margin-top:20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.information-section{
+  position: relative;
+  background-color: #5BCAD3;
+  margin: 100px;
+  height: 440px;
+}
+
+.shop-name{
+  position: absolute;
+  left:210px;
+  top:40px;
+  font-family: "M PLUS 1p"; 
+  font-weight: bold;
+  color: #fff;
+  font-size:30px;
+}
+
+.map{
+  position: absolute;
+  right: 0;
+}
+
+.shop-address{
+  position: absolute;
+  top:120px;
+  left: 228px;
+  line-height:60px;
+  font-family: "M PLUS 1p"; 
+  color: #fff;
+}
+
+.btn-info{
+position: absolute;
+top:340px;
+left: 216px;
+}
+
+footer{
+  background-color: #3F969D;
+}
+
+.footer-shop-name{
+  text-align: center;
+}
+
+.footer-shop-name img{
+width: 100px;
+}
+
+.footer-menu{
+  display: flex;
+  margin-left: 440px;
+}
+
+.footer-menu-item{
+  list-style: none;
+  margin:56px 56px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.footer-menu-item a{
+  color: #fff;
+}
+
+.copy{
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+.menu-title-back{
+  background-color: #5CCAD3;
+  height: 130px;
+  margin:0px 60px;
+}
+
+.menu-title{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 80px;
+  margin: 0px 560px;
+  padding: 20px;
+}
+
+.drink-menu{
+  background-color: #FFB705;
+  margin:80px 60px;
+  height: 600px;
+}
+
+.drink-menu-title{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 80px;
+  margin: 0px 570px;
+  padding-top:20px;
+}
+
+.table_wrap{
+  display: flex;
+  margin-top:40px;
+}
+
+table{
+  margin: 10px 200px;
+}
+
+tr{
+  position: relative;
+  line-height:80px;
+}
+
+td{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 30px;
+}
+
+.menu-wrap{
+  margin:90px 60px;
+  display: flex;
+  width: 100%;
+}
+
+.menu-cm{
+  height: 600px;
+  width: 46%;
+  background-color:#E8BF07;
+}
+
+.menu-cm-b{
+  height: 600px;
+  width: 46%;
+  background-color:#E89207;
+}
+
+.menu-cm-title{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  margin-top:10px;
+  letter-spacing:2px;
+}
+
+.menu-name{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 64px;
+  text-align: center;
+  margin-top:16px;
+  letter-spacing:2px;
+}
+
+.menu-cm-item{
+  font-family: "M PLUS 1p";
+  color: #fff;
+  font-weight: bold;
+  font-size:24px;
+  margin-top:30px;
+  text-align: center;
+}
+
+.menu-cm-img img{
+  width: 40%;
+}
+
+.menu-cm-img{
+  margin-top:50px;
+  text-align: center;
+}
+
+.food-menu{
+  background-color: #FF1262;
+  margin:80px 60px;
+  height: 600px;
+}
+
+.cakes{
+  margin:90px 60px;
+}
+
+.cakes-img{
+  width: 100%;
+}
+
+.cakes-item{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  margin-left:1200px;
+  color: #FF084C;
+  font-size: 24px;
+}
+
+.about-title{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 80px;
+  margin: 0px 500px;
+  padding-top:20px ;
+}
+
+.about-us-section{
+  display:flex;
+  margin:80px 60px;
+  background-color: #3FE09D;
+}
+
+.about-us-section-img img{
+  height: 100%;
+}
+
+.about-us-section-title{
+  text-align: center;
+  margin-top:40px;
+}
+
+.about-us-section-text{
+  width: 50%;
+  font-family: "M PLUS 1p";
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height:40px;
+  margin-top:30px;
+  margin-left:250px;
+}
+
+.company-wrap{
+  display: flex;
+}
+
+.company{
+  background-color: #39F788;
+  margin: 80px 60px;
+  height: 300px;
+}
+
+.company-title{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color:#ffffff;
+  font-size:60px;
+  padding-top:20px;
+  padding-left:20px ;
+}
+
+.company-item{
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  color: #fff;
+  line-height:40px;
+  font-size: 24px;
+  padding-left:180px;
+  padding-top:20px;
+  
+}
+
+.company-item-dt{
+  float: left;
+}
+.company-item-dd{
+  margin-left: 80px;
+  width: 400px;
+}
+
+.information-section-b{
+  position: relative;
+  background-color: #D98B86;
+  margin: 60px;
+  height: 440px;
+}
+
+.shop-address-text-a{
+  position: absolute;
+  top:300px;
+  left: 210px;
+  line-height:60px;
+  font-family: "M PLUS 1p"; 
+  color: #fff;
+}
+
+.shop-address-text-b{
+  position: absolute;
+  top:330px;
+  left: 210px;
+  line-height:60px;
+  font-family: "M PLUS 1p"; 
+  color: #fff;
+}
+
+.shop-address-b{
+  position: absolute;
+  top:120px;
+  left: 210px;
+  line-height:60px;
+  font-family: "M PLUS 1p"; 
+  color: #fff;
+}
+
+.info-name{
+  position: absolute;
+  left:160px;
+  top:60px;
+}
+.info-name img{
+  width: 280px;
 }
